@@ -1,0 +1,139 @@
+@import '../variables.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.text-description {
+    color: #FFF;
+    padding-top: 200px;
+    text-transform: uppercase;
+
+    button {
+        padding: 15px 35px;
+        border: 2px solid white;
+        text-transform: uppercase;
+    }
+}
+
+
+main.container-fluid {
+    height: $full-height;
+    background-image: url(../images/home/01.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+
+    header.header {
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #FFF;
+
+        nav {
+
+            a.navbar-brand {
+
+                .logo-obc {
+                    width: 240px;
+                    margin-right: 20px;
+                    margin-left: -10px;
+                }
+            }
+        }
+    }
+
+    .arrow-down {
+        img {
+            display: inline-block;
+            width: 90px;
+            margin-top: 5px;
+        }
+    }
+
+}
+
+section#mission-2 {
+    height: $full-height;
+    background-image: url('../images/home/03.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+section#dragon-returned {
+    height: $full-height;
+    background-image: url('../images/home/02.gif');
+    background-size: cover;
+    background-position: center;
+}
+
+section#starship {
+    height: $full-height;
+    background-image: url('../images/home/04.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#footer {
+    height: 15vh;
+    background-color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+
+    * {
+        margin-right: 1.5rem;
+    }
+
+    span {
+        color: $color-copyright;
+    }
+
+    a {
+        color: #FFF;
+        text-decoration: none;
+
+        &:hover {
+            color: $a-hover !important;
+        }
+    }
+}
+
+
+// Reponsive
+// Mobile 
+@media (max-width: 426px) {
+    .text-description button {
+        padding: 8px 24px;
+    }
+
+    main.container-fluid {
+        header.header nav a.navbar-brand .logo-obc {
+            width: 180px;
+        }
+    
+        section.container { 
+
+            .arrow-down {
+                margin-top: 4em;
+            }
+        }
+    }
+
+    #footer {
+        justify-content: space-around;
+        font-size: 11px;
+        margin-right: 0;
+    }
+
+}
+@media (max-width: 325px) {
+    main.container-fluid header.header nav a.navbar-brand .logo-obc {
+        width: 170px;
+    }
+}
+
