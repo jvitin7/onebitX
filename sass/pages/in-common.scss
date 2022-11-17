@@ -1,0 +1,103 @@
+@import '../variables.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.text-description {
+    color: #FFF;
+    padding-top: 200px;
+    text-transform: uppercase;
+
+    button {
+        padding: 15px 35px;
+        border: 2px solid white;
+        text-transform: uppercase;
+    }
+}
+
+
+// Header
+main.container-fluid {
+    height: $full-height;
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+
+    header.header {
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #FFF;
+
+        nav {
+
+            a.navbar-brand {
+
+                .logo-obc {
+                    width: 240px;
+                    margin-right: 20px;
+                    margin-left: -10px;
+                }
+            }
+        }
+    }
+}
+
+
+// Footer
+#footer {
+    height: 15vh;
+    background-color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+
+    * {
+        margin-right: 1.5rem;
+    }
+
+    span {
+        color: $color-copyright;
+    }
+
+    a {
+        color: #FFF;
+        text-decoration: none;
+
+        &:hover {
+            color: $a-hover !important;
+        }
+    }
+}
+
+
+// Responsive
+// Mobile
+@media (max-width: 426px) {
+    .text-description button {
+        padding: 8px 24px;
+    }
+
+    main.container-fluid {
+        header.header nav a.navbar-brand .logo-obc {
+            width: 180px;
+        }
+    }
+
+    #footer {
+        justify-content: space-around;
+        font-size: 11px;
+        margin-right: 0;
+    }
+
+}
+@media (max-width: 325px) {
+    main.container-fluid header.header nav a.navbar-brand .logo-obc {
+        width: 170px;
+    }
+}

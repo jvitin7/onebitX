@@ -17,7 +17,6 @@
 
 main.container-fluid {
   height: 100vh;
-  background-image: url(../images/home/01.jpg);
   background-size: cover;
   background-position: center;
   color: #FFF;
@@ -32,32 +31,6 @@ main.container-fluid header.header nav a.navbar-brand .logo-obc {
   width: 240px;
   margin-right: 20px;
   margin-left: -10px;
-}
-main.container-fluid .arrow-down img {
-  display: inline-block;
-  width: 90px;
-  margin-top: 5px;
-}
-
-section#mission-2 {
-  height: 100vh;
-  background-image: url("../images/home/03.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-section#dragon-returned {
-  height: 100vh;
-  background-image: url("../images/home/02.gif");
-  background-size: cover;
-  background-position: center;
-}
-
-section#starship {
-  height: 100vh;
-  background-image: url("../images/home/04.jpg");
-  background-size: cover;
-  background-position: center;
 }
 
 #footer {
@@ -89,9 +62,6 @@ section#starship {
   main.container-fluid header.header nav a.navbar-brand .logo-obc {
     width: 180px;
   }
-  main.container-fluid section.container .arrow-down {
-    margin-top: 4em;
-  }
   #footer {
     justify-content: space-around;
     font-size: 11px;
@@ -103,5 +73,8 @@ section#starship {
     width: 170px;
   }
 }
+main.container-fluid {
+  background-image: url(../../images/falcon9/01.jpg);
+}
 
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=falcon9.css.map */
