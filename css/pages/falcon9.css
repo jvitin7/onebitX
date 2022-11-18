@@ -121,4 +121,43 @@ section.falcon9-desc p.description {
   line-height: 50px;
 }
 
+section.falcon9-car .carousel-inner .carousel-item {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: #FFFFFF;
+}
+section.falcon9-car .carousel-inner .carousel-item .container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.falcon9-car .carousel-inner .carousel-item .container .content {
+  width: 500px;
+  margin-left: 9.5em;
+}
+section.falcon9-car .carousel-inner .carousel-item .container .content p.subtitle,
+section.falcon9-car .carousel-inner .carousel-item .container .content h2.title-car {
+  text-transform: uppercase;
+}
+section.falcon9-car .carousel-inner .carousel-item .container .content table {
+  color: #FFFFFF;
+}
+section.falcon9-car .carousel-inner .slide-1 {
+  background-image: url(../../images/falcon9/03.jpg);
+}
+section.falcon9-car .carousel-inner .slide-2 {
+  background-image: url(../../images/falcon9/04.jpg);
+}
+section.falcon9-car .carousel-inner .slide-3 {
+  background-image: url(../../images/falcon9/05.jpg);
+}
+section.falcon9-car .carousel-inner .carousel-item:nth-child(4) {
+  background-image: url(../../images/falcon9/06.jpg);
+}
+section.falcon9-car .carousel-inner .carousel-item:nth-child(5) {
+  background-image: url(../../images/falcon9/07.jpg);
+}
+
 /*# sourceMappingURL=falcon9.css.map */

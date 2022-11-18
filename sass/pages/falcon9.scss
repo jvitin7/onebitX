@@ -55,3 +55,55 @@ section.falcon9-desc {
         line-height: 50px;
     }
 }
+
+section.falcon9-car {
+
+    .carousel-inner {
+
+        .carousel-item {
+            height: $full-height;
+            background-size: cover;
+            background-position: center;
+            color: #FFFFFF;
+
+            .container {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .content {
+                    width: 500px;
+                    margin-left: 9.5em;
+
+                    p.subtitle, 
+                    h2.title-car {
+                        text-transform: uppercase;
+                    }
+
+                    table {
+                        color: #FFFFFF;
+                    }
+                }
+
+            }
+                
+        }
+
+        .slide-1 {
+            background-image: url(../../images/falcon9/03.jpg);
+        }
+        .slide-2 {
+            background-image: url(../../images/falcon9/04.jpg);
+        }
+        .slide-3 {
+            background-image: url(../../images/falcon9/05.jpg);
+        }
+        .carousel-item:nth-child(4) {
+            background-image: url(../../images/falcon9/06.jpg);
+        }
+        .carousel-item:nth-child(5) {
+            background-image: url(../../images/falcon9/07.jpg);
+        }
+    }
+}
