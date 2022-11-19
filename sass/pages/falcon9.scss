@@ -53,6 +53,7 @@ section.falcon9-desc {
         width: 640px;
         font-size: 22px;
         line-height: 50px;
+        margin-left: 2em;
     }
 }
 
@@ -185,7 +186,6 @@ section.more-info {
     color: #FFFFFF;
 
     p {
-        margin-bottom: -2em;
 
         a {
             color: $color-copyright;
@@ -196,4 +196,82 @@ section.more-info {
             }
         }
     }
+
+    .buttons-group {
+
+        button {
+
+            &:first-child {
+                margin-right: 0.5em;
+            }
+            &:last-child {
+                margin-left: 0.5em;
+            }
+        }
+    }
+}
+
+
+// Responsive
+@media (max-width: 768px) {
+    section.numbers {
+    
+        .row {
+    
+            h2.title-numbers {
+                font-size: 80px;
+            }
+    
+            p.description-numbers {
+                font-size: 18px;
+            }
+        }
+    }
+
+    section.falcon9-desc p.description {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    section.falcon9-car .carousel-inner .carousel-item .container .content,
+    section.merlin .container .content {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 3em;
+    }
+}
+
+@media (max-width: 575px) {
+    section.numbers {
+        height: 100vh;
+    
+        .row {
+    
+            h2.title-numbers {
+                font-size: 90px;
+            }
+    
+            p.description-numbers {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    main.container-fluid section.title-falcon9 h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 375px) {
+    main.container-fluid section.title-falcon9 h1 {
+        font-size: 50px;
+    }
+
+    section.falcon9-desc p.description {
+        font-size: 18px;
+        line-height: auto;
+    }
+    
 }

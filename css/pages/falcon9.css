@@ -119,6 +119,7 @@ section.falcon9-desc p.description {
   width: 640px;
   font-size: 22px;
   line-height: 50px;
+  margin-left: 2em;
 }
 
 section.falcon9-car .carousel-inner .carousel-item {
@@ -225,15 +226,62 @@ section.more-info {
   align-items: center;
   color: #FFFFFF;
 }
-section.more-info p {
-  margin-bottom: -2em;
-}
 section.more-info p a {
   color: #555252;
   text-decoration: none;
 }
 section.more-info p a:hover {
   color: #b9b9b9;
+}
+section.more-info .buttons-group button:first-child {
+  margin-right: 0.5em;
+}
+section.more-info .buttons-group button:last-child {
+  margin-left: 0.5em;
+}
+
+@media (max-width: 768px) {
+  section.numbers .row h2.title-numbers {
+    font-size: 80px;
+  }
+  section.numbers .row p.description-numbers {
+    font-size: 18px;
+  }
+  section.falcon9-desc p.description {
+    width: 100%;
+    margin-left: 0;
+  }
+  section.falcon9-car .carousel-inner .carousel-item .container .content,
+section.merlin .container .content {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 3em;
+  }
+}
+@media (max-width: 575px) {
+  section.numbers {
+    height: 100vh;
+  }
+  section.numbers .row h2.title-numbers {
+    font-size: 90px;
+  }
+  section.numbers .row p.description-numbers {
+    font-size: 20px;
+  }
+}
+@media (max-width: 425px) {
+  main.container-fluid section.title-falcon9 h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 375px) {
+  main.container-fluid section.title-falcon9 h1 {
+    font-size: 50px;
+  }
+  section.falcon9-desc p.description {
+    font-size: 18px;
+    line-height: auto;
+  }
 }
 
 /*# sourceMappingURL=falcon9.css.map */
