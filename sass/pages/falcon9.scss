@@ -99,11 +99,101 @@ section.falcon9-car {
         .slide-3 {
             background-image: url(../../images/falcon9/05.jpg);
         }
-        .carousel-item:nth-child(4) {
+        .slide-4 {
             background-image: url(../../images/falcon9/06.jpg);
         }
-        .carousel-item:nth-child(5) {
+        .slide-5 {
             background-image: url(../../images/falcon9/07.jpg);
+        }
+    }
+}
+
+section.merlin {
+    height: 100vh;
+    background-image: url(../../images/falcon9/08.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+
+    .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+
+        .content {
+            width: 500px;
+            margin-left: 9.5em;
+
+            p.subtitle, 
+            h2.title-car {
+                text-transform: uppercase;
+            }
+
+            table {
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+section.carousel-cap {
+    height: $full-height;
+
+    .carousel-inner {
+
+        .carousel-item {
+            height: $full-height;
+            background-size: cover;
+            background-position: center;
+            color: #FFFFFF;
+
+            p {
+                background-color: black;
+            }
+        }
+
+        .slide-1 {
+            background-image: url(../../images/falcon9/09.jpg);
+        }
+        .slide-2 {
+            background-image: url(../../images/falcon9/10.jpg);
+        }
+        .slide-3 {
+            background-image: url(../../images/falcon9/11.jpg);
+        }
+        .slide-4 {
+            background-image: url(../../images/falcon9/12.jpg);
+        }
+        .slide-5 {
+            background-image: url(../../images/falcon9/13.jpg);
+        }
+        .slide-6 {
+            background-image: url(../../images/falcon9/14.jpg);
+        }
+    }
+}
+
+section.more-info {
+    height: 85vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+
+    p {
+        margin-bottom: -2em;
+
+        a {
+            color: $color-copyright;
+            text-decoration: none;
+
+            &:hover {
+                color: $a-hover;
+            }
         }
     }
 }

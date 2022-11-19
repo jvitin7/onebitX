@@ -153,11 +153,87 @@ section.falcon9-car .carousel-inner .slide-2 {
 section.falcon9-car .carousel-inner .slide-3 {
   background-image: url(../../images/falcon9/05.jpg);
 }
-section.falcon9-car .carousel-inner .carousel-item:nth-child(4) {
+section.falcon9-car .carousel-inner .slide-4 {
   background-image: url(../../images/falcon9/06.jpg);
 }
-section.falcon9-car .carousel-inner .carousel-item:nth-child(5) {
+section.falcon9-car .carousel-inner .slide-5 {
   background-image: url(../../images/falcon9/07.jpg);
+}
+
+section.merlin {
+  height: 100vh;
+  background-image: url(../../images/falcon9/08.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #FFFFFF;
+}
+section.merlin .container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.merlin .container .content {
+  width: 500px;
+  margin-left: 9.5em;
+}
+section.merlin .container .content p.subtitle,
+section.merlin .container .content h2.title-car {
+  text-transform: uppercase;
+}
+section.merlin .container .content table {
+  color: #FFFFFF;
+}
+
+section.carousel-cap {
+  height: 100vh;
+}
+section.carousel-cap .carousel-inner .carousel-item {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: #FFFFFF;
+}
+section.carousel-cap .carousel-inner .carousel-item p {
+  background-color: black;
+}
+section.carousel-cap .carousel-inner .slide-1 {
+  background-image: url(../../images/falcon9/09.jpg);
+}
+section.carousel-cap .carousel-inner .slide-2 {
+  background-image: url(../../images/falcon9/10.jpg);
+}
+section.carousel-cap .carousel-inner .slide-3 {
+  background-image: url(../../images/falcon9/11.jpg);
+}
+section.carousel-cap .carousel-inner .slide-4 {
+  background-image: url(../../images/falcon9/12.jpg);
+}
+section.carousel-cap .carousel-inner .slide-5 {
+  background-image: url(../../images/falcon9/13.jpg);
+}
+section.carousel-cap .carousel-inner .slide-6 {
+  background-image: url(../../images/falcon9/14.jpg);
+}
+
+section.more-info {
+  height: 85vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+section.more-info p {
+  margin-bottom: -2em;
+}
+section.more-info p a {
+  color: #555252;
+  text-decoration: none;
+}
+section.more-info p a:hover {
+  color: #b9b9b9;
 }
 
 /*# sourceMappingURL=falcon9.css.map */
