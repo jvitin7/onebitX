@@ -1,0 +1,149 @@
+@import '../variables.scss';
+@import './in-common.scss';
+
+
+main.container-fluid {
+    height: $full-height;
+    background-image: url(../../images/humanFlight/01.jpg);
+
+    h1 {
+        font-size: 120px;
+    }
+    h3 {
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .arrow-down {
+
+        img {
+            display: inline-block;
+            width: 90px;
+            margin-top: 10em;
+        }
+    }
+}
+
+section.page-comercial {
+    height: 25vh;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        width: 800px;
+        color: #FFFFFF;
+        font-size: 20px; 
+
+        a {
+            color: $color-copyright;
+            text-decoration: none;
+
+            &hover {
+                color: $a-hover;
+            }
+        }
+    }
+}
+
+section.mission, section.spacial-station {
+    height: $full-height;
+    background-size: cover;
+    background-position: center;
+
+    .container .row .col.content {
+        color: #FFFFFF;
+        padding-top: 15%;
+
+        h2 {
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        .sub-title {
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+section.mission {
+    background-image: url(../../images/humanFlight/02.jpg);
+
+    .container .row .col.content {   
+        height: $full-height;
+        margin-left: 10%;
+    }
+}
+
+section.spacial-station {
+    background-image: url(../../images/humanFlight/03.jpg);
+}
+
+
+// Responsive
+// Desktop
+@media (max-width: 1024px) {
+    main.container-fluid h1 {
+        font-size: 90px;
+    }
+
+    section.mission, section.spacial-station {
+        .container .row .col.content {  
+            padding-top: 20%;
+
+            h2 {
+                font-size: 49px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    section.mission .container .row .col.content {
+        margin-left: 5%;
+    }
+}
+
+// Mobile
+@media (max-width: 425px) {
+    main.container-fluid {
+        h1 {
+            margin-top: 3em;
+            font-size: 40px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+    }
+
+    section.page-comercial {
+        height: 30vh;
+
+        p {
+            width: auto;
+            font-size: 16px;
+        }
+    }
+
+    section.mission, section.spacial-station {
+        .container .row .col.content {
+            padding-top: 30%;
+        }
+    }
+
+    section.mission .container .row {
+        .col.nothing {
+            display: none;
+        }
+
+        .col.content {
+    
+            .sub-title, button {
+                font-weight: 500;
+                background-color: #FFFFFF;
+                color: #000000;
+            }
+        }
+    }
+}
