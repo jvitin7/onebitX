@@ -47,6 +47,40 @@ main.container-fluid {
     }
 }
 
+section.more-info {
+    height: 85vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+
+    p {
+
+        a {
+            color: $color-copyright;
+            text-decoration: none;
+
+            &:hover {
+                color: $a-hover;
+            }
+        }
+    }
+
+    .buttons-group {
+
+        button {
+
+            &:first-child {
+                margin-right: 0.5em;
+            }
+            &:last-child {
+                margin-left: 0.5em;
+            }
+        }
+    }
+}
 
 // Footer
 #footer {

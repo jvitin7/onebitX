@@ -35,6 +35,29 @@ main.container-fluid header.header nav a.navbar-brand .logo-obc {
   margin-left: -10px;
 }
 
+section.more-info {
+  height: 85vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+section.more-info p a {
+  color: #555252;
+  text-decoration: none;
+}
+section.more-info p a:hover {
+  color: #b9b9b9;
+}
+section.more-info .buttons-group button:first-child {
+  margin-right: 0.5em;
+}
+section.more-info .buttons-group button:last-child {
+  margin-left: 0.5em;
+}
+
 #footer {
   height: 15vh;
   background-color: #000;
@@ -112,44 +135,53 @@ section.page-comercial p ahover {
   color: #b9b9b9;
 }
 
-section.mission, section.spacial-station {
+section.mission, section.spacial-station, section.moon, section.martian {
   height: 100vh;
   background-size: cover;
   background-position: center;
 }
-section.mission .container .row .col.content, section.spacial-station .container .row .col.content {
+section.mission .container .row .col.content, section.spacial-station .container .row .col.content, section.moon .container .row .col.content, section.martian .container .row .col.content {
   color: #FFFFFF;
   padding-top: 15%;
 }
-section.mission .container .row .col.content h2, section.spacial-station .container .row .col.content h2 {
+section.mission .container .row .col.content h2, section.spacial-station .container .row .col.content h2, section.moon .container .row .col.content h2, section.martian .container .row .col.content h2 {
   font-size: 60px;
   font-weight: bold;
 }
-section.mission .container .row .col.content .sub-title, section.spacial-station .container .row .col.content .sub-title {
+section.mission .container .row .col.content .sub-title, section.spacial-station .container .row .col.content .sub-title, section.moon .container .row .col.content .sub-title, section.martian .container .row .col.content .sub-title {
   font-weight: 300;
   margin-bottom: 40px;
 }
 
-section.mission {
-  background-image: url(../../images/humanFlight/02.jpg);
-}
-section.mission .container .row .col.content {
+section.mission .container .row .col.content, section.moon .container .row .col.content {
   height: 100vh;
   margin-left: 10%;
+}
+
+section.mission {
+  background-image: url(../../images/humanFlight/02.jpg);
 }
 
 section.spacial-station {
   background-image: url(../../images/humanFlight/03.jpg);
 }
 
+section.moon {
+  background-image: url(../../images/humanFlight/04.jpg);
+}
+
+section.martian {
+  background-image: url(../../images/humanFlight/05.jpg);
+}
+
 @media (max-width: 1024px) {
   main.container-fluid h1 {
     font-size: 90px;
   }
-  section.mission .container .row .col.content, section.spacial-station .container .row .col.content {
+  section.mission .container .row .col.content, section.spacial-station .container .row .col.content, section.moon .container .row .col.content, section.martian .container .row .col.content {
     padding-top: 20%;
   }
-  section.mission .container .row .col.content h2, section.spacial-station .container .row .col.content h2 {
+  section.mission .container .row .col.content h2, section.spacial-station .container .row .col.content h2, section.moon .container .row .col.content h2, section.martian .container .row .col.content h2 {
     font-size: 49px;
     font-weight: bold;
   }
@@ -172,7 +204,7 @@ section.spacial-station {
     width: auto;
     font-size: 16px;
   }
-  section.mission .container .row .col.content, section.spacial-station .container .row .col.content {
+  section.mission .container .row .col.content, section.spacial-station .container .row .col.content, section.moon .container .row .col.content, section.martian .container .row .col.content {
     padding-top: 30%;
   }
   section.mission .container .row .col.nothing {
@@ -182,6 +214,12 @@ section.spacial-station {
     font-weight: 500;
     background-color: #FFFFFF;
     color: #000000;
+  }
+  section.moon .container .row .col.nothing {
+    display: none;
+  }
+  section.moon .container .row .col.content {
+    margin-left: 25%;
   }
 }
 
